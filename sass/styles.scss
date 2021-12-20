@@ -1,0 +1,747 @@
+/* Description: Master CSS file */
+
+/*****************************************
+Table Of Contents:
+- Css Reset
+- Colors
+- General Styles
+- Navigation
+- User List Styles
+- Appointment Table
+- Patient List Styles
+- Footer
+- Copyright
+- Extra Pages
+- Sign Up Form
+- Media Queries
+******************************************/
+
+/*****************************************
+
+******************************************/
+
+/**************************/
+/*     Css Reset     */
+/**************************/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+
+  font-family: "DmSans";
+  list-style: none;
+  a {
+    text-decoration: none;
+    color: #000;
+
+    &:hover {
+      color: #000;
+    }
+  }
+}
+
+/**********************/
+/*     Colors     */
+/**********************/
+@import "colors";
+
+@font-face {
+  font-family: "Dmsans";
+
+  src: url("/assets/fonts/DMSans-Regular.ttf") format("truetype");
+}
+
+/**********************/
+/*   General Styles   */
+/**********************/
+
+.btn-p {
+  background: $btn-bg;
+  opacity: 0.92;
+  border: none;
+  font-size: 0.9em;
+
+  &:hover {
+    background: $btn-bg;
+    opacity: 1;
+  }
+}
+
+.btn-o-p {
+  background: #fff;
+  opacity: 0.92;
+  border: 0.1rem solid $btn-bg;
+  color: #297f87;
+  font-size: 0.9em;
+
+  &:hover {
+    background: $btn-bg;
+    border: 0.1rem solid $btn-bg;
+    opacity: 1;
+  }
+}
+
+.icon {
+  font-size: 2em;
+  color: $red;
+}
+
+.icon-1 {
+  color: $green;
+}
+
+.icon-2 {
+  font-size: 2em;
+  color: $green;
+}
+
+.icon-size {
+  font-size: 1.5em;
+  padding: 0.66rem;
+  border-radius: 0.3rem;
+}
+
+.bg-1 {
+  background: #8affff;
+  color: #059dc0;
+}
+
+.bg-2 {
+  background: #a4e8e0;
+  color: #15b5b0;
+}
+
+.bg-3 {
+  background: #82fdc4;
+  color: #4c5270;
+}
+
+.bg-4 {
+  background: #f9bdc0;
+  color: $red;
+}
+.bg-5 {
+  background: #bcece0;
+  color: #15b5b0;
+}
+
+.title,
+.email {
+  color: $gray;
+  font-size: 0.9em;
+}
+
+.subtitle {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.name {
+  font-weight: bold;
+  font-size: 1em;
+}
+
+.patient-id {
+  color: $patient-id;
+}
+
+.custom-row {
+  display: flex;
+  align-items: center;
+
+  img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 0.6rem;
+  }
+}
+
+.divider {
+  height: 0.05rem;
+  margin: 0rem auto;
+  background: $divider-bg;
+  margin: 0.4rem 0rem;
+}
+
+/**********************/
+/*     Navigation     */
+/**********************/
+nav {
+  height: 100vh;
+  width: 16rem;
+  background: $hover-bg;
+  position: fixed;
+  top: 0;
+  left: -16rem;
+  z-index: 10;
+  overflow-y: auto;
+  overflow-x: hidden;
+  transition: all 0.5s ease;
+
+  .back_btn {
+    font-size: 2em;
+    cursor: pointer;
+  }
+
+  &.active {
+    left: 0;
+    transition: all 0.5s ease;
+  }
+
+  ul {
+    padding-top: 3rem;
+
+    li {
+      margin-bottom: 1.5rem;
+
+      a {
+        color: $black;
+
+        font-size: 0.93em;
+
+        &:hover {
+          color: $btn-bg;
+          transition: all 0.3s ease;
+        }
+
+        .ifs {
+          font-size: 1.2em;
+        }
+      }
+    }
+  }
+}
+
+.admin-custom-row {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 0.6rem;
+  }
+
+  .name,
+  .email {
+    font-size: 0.81em;
+  }
+
+  .name {
+    display: block;
+  }
+}
+
+.navbar {
+  height: 100vh;
+  width: 4.7rem;
+  background: $hover-bg;
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  ul {
+    li {
+      margin: 2rem 0rem;
+      a {
+        i {
+          font-size: 1.5em;
+
+          &:hover {
+            color: $btn-bg;
+          }
+        }
+      }
+    }
+  }
+
+  .log-out {
+    position: absolute;
+    bottom: 1.8rem;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    cursor: pointer;
+
+    i {
+      font-size: 1.7em;
+
+      &:hover {
+        color: $red;
+        transition: all 0.3s ease;
+      }
+    }
+  }
+}
+
+.menu {
+  font-size: 2em;
+  cursor: pointer;
+}
+
+/**********************/
+/*  User List styles  */
+/**********************/
+
+.user-list-container {
+  width: 88%;
+  margin: 0rem auto;
+  font-size: 0.79em;
+
+  .user-header-container {
+    margin: 2rem auto 0rem auto;
+    box-shadow: 0rem 0rem 0.2rem rgba(0, 0, 0, 0.2);
+    padding: 1.5rem 2rem;
+    background: $white;
+
+    .header {
+      color: $gray;
+    }
+
+    .col-table {
+      .text-lead {
+        padding-bottom: 1.5rem;
+        font-weight: bold;
+        font-size: 1.3em;
+      }
+    }
+    .row_ {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+
+  .user-subtitle-container {
+    margin: 0.1rem auto 0rem auto;
+    box-shadow: 0rem 0rem 0.2rem rgba(0, 0, 0, 0.2);
+    padding: 1rem 2rem;
+    background: $white;
+    cursor: pointer;
+
+    &:hover {
+      background: $hover-bg;
+      box-shadow: 0 2px 1.5px rgba(0, 0, 0, 0.034),
+        0 5px 4px rgba(0, 0, 0, 0.048), 0 8.5px 3px rgba(0, 0, 0, 0.06),
+        0 2.3px 7.9px rgba(0, 0, 0, 0.072);
+      transition: all 0.3s ease;
+    }
+
+    .row_ {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+}
+
+.fc {
+  color: $gray;
+}
+
+.col-table-1 {
+  width: 7%;
+  color: $col-tb-1;
+
+  span {
+    margin-left: 0.5rem;
+  }
+}
+
+.col-table-2 {
+  width: 22%;
+
+  .img-name {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    .img {
+      img {
+        width: 2.3rem;
+        height: 2.3rem;
+        border-radius: 50%;
+        margin-right: 0.5rem;
+      }
+    }
+  }
+}
+
+.col-table-3 {
+  width: 19%;
+}
+
+.col-table-4 {
+  width: 15%;
+}
+
+.col-table-5 {
+  width: 11%;
+}
+
+.col-table-6 {
+  width: 9%;
+}
+
+.col-table-7 {
+  width: 12%;
+}
+
+.cta {
+  position: relative;
+  margin: auto;
+  padding: 12px 18px;
+  transition: all 0.2s ease;
+  border: none;
+  background: none;
+}
+
+.cta:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  border-radius: 50px;
+  background: #b1dae7;
+  width: 45px;
+  height: 40px;
+  transition: all 0.3s ease;
+}
+
+.cta span {
+  position: relative;
+
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: #234567;
+}
+
+.cta svg {
+  position: relative;
+  top: 0;
+  margin-left: 10px;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: #234567;
+  stroke-width: 2;
+  transform: translateX(-5px);
+  transition: all 0.3s ease;
+}
+
+.cta:hover:before {
+  width: 100%;
+  background: #b1dae7;
+}
+
+.cta:hover svg {
+  transform: translateX(0);
+}
+
+.cta:active {
+  transform: scale(0.95);
+}
+
+.button {
+  display: inline-block;
+  padding: 12px 24px;
+  border: 1px solid #4f4f4f;
+  border-radius: 4px;
+  transition: all 0.2s ease-in;
+  position: relative;
+  overflow: hidden;
+  font-size: 19px;
+  color: black;
+  z-index: 1;
+}
+
+.button:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) scaleY(1) scaleX(1.25);
+  top: 100%;
+  width: 140%;
+  height: 180%;
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 50%;
+  display: block;
+  transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+  z-index: -1;
+}
+
+.button:after {
+  content: "";
+  position: absolute;
+  left: 55%;
+  transform: translateX(-50%) scaleY(1) scaleX(1.45);
+  top: 180%;
+  width: 160%;
+  height: 190%;
+  background-color: #39bda7;
+  border-radius: 50%;
+  display: block;
+  transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+  z-index: -1;
+}
+
+.button:hover {
+  color: #ffffff;
+  border: 1px solid #39bda7;
+}
+
+.button:hover:before {
+  top: -35%;
+  background-color: #39bda7;
+  transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+
+.button:hover:after {
+  top: -45%;
+  background-color: #39bda7;
+  transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+
+/**********************/
+/*  Appointment Table */
+/**********************/
+
+.sub-color1 {
+  color: #29c6d5;
+}
+
+.sub-color2 {
+  color: #999;
+}
+
+#card-table {
+  .custom-container-1 {
+    width: 88%;
+    margin: 0.1rem auto 0rem auto;
+
+    .btn-o-p {
+      background: #fff;
+      opacity: 0.92;
+      border: 0.1rem solid $btn-bg;
+      color: #297f87;
+      font-size: 1.1em;
+
+      &:hover {
+        background: $btn-bg;
+        border: 0.1rem solid $btn-bg;
+        opacity: 1;
+        color: $white;
+      }
+    }
+  }
+
+  .fs {
+    font-size: 0.99em;
+  }
+
+  background: #f9f9f9;
+  height: 100%;
+  font-size: 0.79em;
+  padding-top: 1rem;
+
+  .custom-container {
+    width: 88%;
+    margin: 0.1rem auto 0rem auto;
+    box-shadow: 0rem 0rem 0.2rem rgba(0, 0, 0, 0.2);
+    padding: 1.5rem 2rem;
+    background: #fff;
+    cursor: pointer;
+
+    .text-lead {
+      padding-bottom: 1rem;
+      font-weight: bold;
+      font-size: 1.3em;
+    }
+
+    .row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+
+      .col-1 {
+        width: 15%;
+      }
+
+      .col-2 {
+        width: 32%;
+      }
+
+      .col-3 {
+        width: 20%;
+      }
+
+      .col-4 {
+        width: 20%;
+      }
+
+      .col-5 {
+        width: 10%;
+      }
+
+      .header {
+        color: #999;
+      }
+
+      .col-2 {
+        .row__ {
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+        }
+      }
+    }
+  }
+
+  .custom-card {
+    width: 88%;
+    margin: 0.1rem auto 0rem auto;
+    box-shadow: 0rem 0rem 0.2rem rgba(0, 0, 0, 0.2);
+    padding: 1rem 2rem;
+    background: #fff;
+    cursor: pointer;
+
+    &:hover {
+      background: #f9f9f9;
+      //   box-shadow: 0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.1);
+      box-shadow: 0 2px 1.5px rgba(0, 0, 0, 0.034),
+        0 5px 4px rgba(0, 0, 0, 0.048), 0 8.5px 3px rgba(0, 0, 0, 0.06),
+        0 2.3px 7.9px rgba(0, 0, 0, 0.072);
+      transition: all 0.3s ease;
+    }
+
+    .text-lead {
+      padding-bottom: 1rem;
+      font-weight: bold;
+      font-size: 1.3em;
+    }
+
+    .row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+
+      .col-1 {
+        width: 15%;
+      }
+
+      .col-2 {
+        width: 32%;
+      }
+
+      .col-3 {
+        width: 20%;
+      }
+
+      .col-4 {
+        width: 20%;
+      }
+
+      .col-5 {
+        width: 10%;
+      }
+
+      .header {
+        color: #999;
+      }
+
+      .col-2 {
+        .row__ {
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+        }
+      }
+    }
+  }
+}
+
+/**********************/
+/*Patients List styles*/
+/**********************/
+
+#patients-list {
+  height: 100vh;
+
+  background: #f9f9f9;
+
+  .bg {
+    width: 88%;
+    margin: 0rem auto;
+    .patients-list-container {
+      width: 100%;
+      margin: 0rem auto;
+      font-size: 0.79em;
+
+      .user-header-container {
+        margin: 2rem auto 0rem auto;
+        box-shadow: 0rem 0rem 0.2rem rgba(0, 0, 0, 0.2);
+        padding: 1.5rem 2rem;
+        background: $white;
+
+        .header {
+          color: $gray;
+        }
+
+        .col-table {
+          .text-lead {
+            padding-bottom: 1.5rem;
+            font-weight: bold;
+            font-size: 1.3em;
+          }
+        }
+        .row_ {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+        }
+      }
+
+      .user-subtitle-container {
+        margin: 0.1rem auto 0rem auto;
+        box-shadow: 0rem 0rem 0.2rem rgba(0, 0, 0, 0.2);
+        padding: 1rem 2rem;
+        background: $white;
+        cursor: pointer;
+
+        &:hover {
+          background: $hover-bg;
+
+          box-shadow: 0 2px 1.5px rgba(0, 0, 0, 0.034),
+            0 5px 4px rgba(0, 0, 0, 0.048), 0 8.5px 3px rgba(0, 0, 0, 0.06),
+            0 2.3px 7.9px rgba(0, 0, 0, 0.072);
+          transition: all 0.3s ease;
+        }
+
+        .row_ {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+        }
+      }
+    }
+  }
+}
+
+/**********************/
+/*     Sign Up Form   */
+/**********************/
+@import "signup-form";
+
+/**********************/
+/*     Mediaqueries   */
+/**********************/
+
+@import "ipadMediaquery";
+@import "largeMediaquery";
+@import "mobileMediaquery";
