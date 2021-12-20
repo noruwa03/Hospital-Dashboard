@@ -1,0 +1,166 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Monitor Hospital</title>
+    <link
+      rel="stylesheet"
+      href="/bootstrap-5.0.0-beta3-dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="/icons-1.7.0/font/bootstrap-icons.css" />
+    <!-- JavaScript Bundle with Popper -->
+    <script src="/bootstrap-5.0.0-beta3-dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="/sass/styles.css" />
+  </head>
+  <body>
+    <!-- start of container-lg -->
+    <div class="container-lg pt-2">
+      <div class="row align-items-center justify-content-sm-between pt-4">
+        <div class="col-sm-6">
+          <div class="h2">Monitor Hospital</div>
+          <p class="fw-normal">Birth Report, Inventory & Blood Bank.</p>
+        </div>
+        <div class="col-sm-6 text-sm-end">
+          <div class="btn btn-o-p btn-outline-primary me-3">Last 30 Days</div>
+          <div class="btn btn-p btn-primary">
+            <i class="bi bi-box me-2"></i>Report
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="
+          row
+          align-items-center
+          justify-content-lg-between justify-content-sm-around
+          py-2
+        "
+      >
+        <div class="col-lg-4 col-sm-5">
+          <div class="card p-4 my-2">
+            <a href="birth-list.html">
+              <div class="row align-items-center justify-content-lg-between">
+                <div class="col-lg-6 col-6">
+                  <div class="h6">Birth Report</div>
+                  <div class="h2">675</div>
+                </div>
+                <div class="col-lg-6 col-6 text-end">
+                  <i class="bi bi-fingerprint icon"></i>
+                </div>
+                <div>
+                  <span><i class="bi bi-arrow-repeat icon-1 me-2"></i></span> 17
+                  this week
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-5">
+          <div class="card p-4 my-2">
+            <a href="">
+              <div class="row align-items-center justify-content-lg-between">
+                <div class="col-lg-12">
+                  <div class="h6 text-center">Inventory</div>
+                  <div class="h2 text-center">350</div>
+                </div>
+
+                <div class="text-center">
+                  <span><i class="bi bi-arrow-repeat icon-1 me-2"></i></span> 4
+                  this week
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <div class="card p-4 my-2">
+            <a href="">
+              <div class="row align-items-center justify-content-lg-between">
+                <div class="col-lg-6 col-6">
+                  <div class="h6">Blood Bank</div>
+                  <div class="h2">105</div>
+                </div>
+                <div class="col-lg-6 col-6 text-end">
+                  <i class="bi bi-battery-charging icon-2"></i>
+                </div>
+                <div>
+                  <span><i class="bi bi-arrow-repeat icon-1 me-2"></i></span> 8
+                  this week
+                </div>
+              </div>
+            </a>
+            <!-- end of row -->
+          </div>
+        </div>
+      </div>
+      <!-- end of row -->
+    </div>
+    <!-- end of row -->
+
+    <!-- Birth List -->
+    <div class="user-list-container pb-5 pt-2">
+      <div class="user-header-container">
+        <div class="col-table">
+          <div class="text-lead">Birth List</div>
+        </div>
+        <div class="row_">
+          <div class="col-table-1 header">
+            <input type="checkbox" />
+            <span>Id</span>
+          </div>
+          <div class="col-table-2 header">Child Name</div>
+          <div class="col-table-3 header">Mother Name</div>
+          <div class="col-table-4 header">Father Name</div>
+          <div class="col-table-5 header">Date</div>
+          <div class="col-table-6 header">Gender</div>
+          <div class="col-table-7 header">Report</div>
+        </div>
+      </div>
+
+      <div class="user-subtitle-container">
+        <div class="row_">
+          <div class="col-table-1">
+            <input type="checkbox" />
+            <span>9765</span>
+          </div>
+          <div class="col-table-2">
+            <div class="img-name">
+              <div class="img">
+                <img src="/assets/images/img-1.jpg" alt="" />
+              </div>
+              <div class="username">Osazuwa Alexander Uwadia</div>
+            </div>
+          </div>
+          <div class="col-table-3 fc">Elizabeth Uwadia</div>
+          <div class="col-table-4 fc">Agho Uwadia</div>
+          <div class="col-table-5 fc">19/12/2020 02:55 PM</div>
+          <div class="col-table-6 fc">Male</div>
+          <div class="col-table-7 fc">Normal Delivery</div>
+        </div>
+      </div>
+
+      <div class="user-subtitle-container">
+        <div class="row_">
+          <div class="col-table-1">
+            <input type="checkbox" />
+            <span>9765</span>
+          </div>
+          <div class="col-table-2">
+            <div class="img-name">
+              <div class="img">
+                <img src="/assets/images/img-2.jpg" alt="" />
+              </div>
+              <div class="username">Julia Walker</div>
+            </div>
+          </div>
+          <div class="col-table-3 fc">Kate Walker</div>
+          <div class="col-table-4 fc">Thomas Walker</div>
+          <div class="col-table-5 fc">3/5/2020 01:03 AM</div>
+          <div class="col-table-6 fc">Male</div>
+          <div class="col-table-7 fc">Cesarean Section</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

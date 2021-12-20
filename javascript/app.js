@@ -1,5 +1,5 @@
 const back_btn = document.querySelector(".back_btn");
-const nav = document.querySelector("nav");
+const nav = document.querySelector(".nav_");
 const menu = document.querySelector(".menu");
 
 if (back_btn) {
