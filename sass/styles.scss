@@ -9,6 +9,7 @@ Table Of Contents:
 - User List Styles
 - Appointment Table
 - Patient List Styles
+- User Profile
 - Footer
 - Copyright
 - Extra Pages
@@ -730,6 +731,20 @@ nav {
         }
       }
     }
+  }
+}
+
+/**********************/
+/*     User Profile   */
+/**********************/
+
+#user-profile {
+  width: 60%;
+  margin: 0 auto;
+
+  .title_ {
+    font-size: 1em;
+    color: #777777;
   }
 }
 

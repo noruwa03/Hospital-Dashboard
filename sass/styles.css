@@ -8,10 +8,11 @@ Table Of Contents:
 - User List Styles
 - Appointment Table
 - Patient List Styles
+- User Profile
 - Footer
 - Copyright
-- Back To Top Button
 - Extra Pages
+- Sign Up Form
 - Media Queries
 ******************************************/
 /*****************************************
@@ -797,6 +798,19 @@ nav ul li a .ifs {
 }
 
 /**********************/
+/*     User Profile   */
+/**********************/
+#user-profile {
+  width: 60%;
+  margin: 0 auto;
+}
+
+#user-profile .title_ {
+  font-size: 1em;
+  color: #777777;
+}
+
+/**********************/
 /*     Sign Up Form   */
 /**********************/
 /*******************/
@@ -907,6 +921,13 @@ nav ul li a .ifs {
   .col-table-7 {
     width: 21%;
   }
+  #user-profile {
+    width: 96%;
+    margin: 0 auto;
+  }
+  #user-profile .title_ {
+    font-size: 1em;
+  }
 }
 
 @media screen and (max-width: 1025px) {
@@ -950,6 +971,13 @@ nav ul li a .ifs {
   }
   .col-table-7 {
     width: 16%;
+  }
+  #user-profile {
+    width: 80%;
+    margin: 0 auto;
+  }
+  #user-profile .title_ {
+    font-size: 1em;
   }
 }
 
@@ -1059,6 +1087,13 @@ nav ul li a .ifs {
   }
   #card-table .custom-card .row .col-5 {
     display: none;
+  }
+  #user-profile {
+    width: 94%;
+    margin: 0 auto;
+  }
+  #user-profile .title_ {
+    font-size: 1em;
   }
 }
 /*# sourceMappingURL=styles.css.map */
