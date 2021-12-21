@@ -1,0 +1,153 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inventory</title>
+    <link
+      rel="stylesheet"
+      href="/bootstrap-5.0.0-beta3-dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="/icons-1.7.0/font/bootstrap-icons.css" />
+    <!-- JavaScript Bundle with Popper -->
+    <script src="/bootstrap-5.0.0-beta3-dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="/sass/styles.css" />
+  </head>
+  <body>
+    <!-- start of container-lg -->
+    <div class="container-lg pt-2">
+      <div class="row align-items-center justify-content-sm-between pt-4">
+        <div class="col-sm-6">
+          <div class="h2">Inventory Management</div>
+        </div>
+        <div class="col-sm-6 text-sm-end">
+          <a href="inventory-card-form.html" class="btn btn-o-p btn-outline-primary me-3">Update</a>
+          <a href="inventory-list-form.html" class="btn btn-p btn-primary">
+            <i class="bi bi-box me-2"></i>Add Item
+          </a>
+        </div>
+      </div>
+
+      <div
+        class="
+          row
+          align-items-center
+          justify-content-lg-between justify-content-sm-around
+          py-2
+        "
+      >
+        <div class="col-lg-4 col-sm-5">
+          <div class="card p-4 my-2">
+            <div class="row align-items-center justify-content-lg-between">
+              <div class="col-lg-6 col-6">
+                <div class="h6">Total items</div>
+                <div class="h2">2,345</div>
+              </div>
+              <div class="col-lg-6 col-6 text-end">
+                <i
+                  class="bi bi-diagram-3"
+                  style="font-size: 2em; color: #29c6d5"
+                ></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-5">
+          <div class="card p-4 my-2">
+            <div class="row align-items-center justify-content-lg-between">
+              <div class="col-lg-6 col-6">
+                <div class="h6">Total Equipment</div>
+                <div class="h2">529</div>
+              </div>
+
+              <div class="col-lg-6 col-6 text-end">
+                <i
+                  class="bi bi-bounding-box-circles"
+                  style="font-size: 2em; color: #32cd32"
+                ></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-5">
+          <div class="card p-4 my-2">
+            <div class="row align-items-center justify-content-lg-between">
+              <div class="col-lg-6 col-6">
+                <div class="h6">Medicine Category</div>
+                <div class="h2">43</div>
+              </div>
+
+              <div class="col-lg-6 col-6 text-end">
+                <i
+                  class="bi bi-app-indicator"
+                  style="font-size: 2em; color: #297f87"
+                ></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end of row -->
+    </div>
+    <!-- end of row -->
+
+    <!-- Birth List -->
+    <div class="user-list-container pb-5 pt-2">
+      <div class="user-header-container">
+        <div class="col-table">
+          <div class="text-lead">Item List</div>
+        </div>
+        <div class="row_">
+          <div class="col-table-1 header">
+            <input type="checkbox" />
+            <span>Id</span>
+          </div>
+          <div class="col-table-2 header">Name</div>
+          <div class="col-table-3 header">Category</div>
+          <div class="col-table-4 header">Supplier</div>
+          <div class="col-table-5 header">Total Quantity</div>
+          <div class="col-table-6 header">Date</div>
+          <div class="col-table-7 header">Status</div>
+        </div>
+      </div>
+
+      <div class="user-subtitle-container">
+        <div class="row_">
+          <div class="col-table-1">
+            <input type="checkbox" />
+            <span>9765</span>
+          </div>
+          <div class="col-table-2">
+            <div class="img-name">
+              <div class="username">Dressing Cotton</div>
+            </div>
+          </div>
+          <div class="col-table-3 fc">Equipements</div>
+          <div class="col-table-4 fc">Asemota Hosp Equip</div>
+          <div class="col-table-5 fc">159</div>
+          <div class="col-table-6 fc">19/12/2020</div>
+          <div class="col-table-7 fc">Available</div>
+        </div>
+      </div>
+
+      <div class="user-subtitle-container">
+        <div class="row_">
+          <div class="col-table-1">
+            <input type="checkbox" />
+            <span>9765</span>
+          </div>
+          <div class="col-table-2">
+            <div class="img-name">
+              <div class="username">	Paracetamol</div>
+            </div>
+          </div>
+          <div class="col-table-3 fc">Medicine</div>
+          <div class="col-table-4 fc">Nordev Medi</div>
+          <div class="col-table-5 fc">873</div>
+          <div class="col-table-6 fc">07/08/2020</div>
+          <div class="col-table-7 fc">Low</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
