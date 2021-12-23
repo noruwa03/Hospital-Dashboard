@@ -11,7 +11,8 @@ Table Of Contents:
 - User Profile
 - Footer
 - Copyright
-- Extra Pages
+- Diagnosis Table
+- Prescription Table
 - Sign Up Form
 - Media Queries
 ******************************************/
@@ -163,6 +164,10 @@ Table Of Contents:
   margin: 0rem auto;
   background: #e5e5e5;
   margin: 0.4rem 0rem;
+}
+
+.form-control:focus {
+  border-color: #297f87;
 }
 
 /**********************/
@@ -811,6 +816,232 @@ Table Of Contents:
 }
 
 /**********************/
+/*  Diagnosis Table   */
+/**********************/
+.diagnosis-container {
+  width: 100%;
+  margin: 0rem auto;
+  font-size: 0.79em;
+}
+
+.diagnosis-container .user-header-container {
+  margin: 2rem auto 0rem auto;
+  -webkit-box-shadow: 0rem 0rem 0.2rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0rem 0rem 0.2rem rgba(0, 0, 0, 0.2);
+  padding: 1.5rem 2rem;
+  background: #fff;
+}
+
+.diagnosis-container .user-header-container .header {
+  color: #9999;
+}
+
+.diagnosis-container .user-header-container .col-table .text-lead {
+  padding-bottom: 1.5rem;
+  font-weight: bold;
+  font-size: 1.3em;
+}
+
+.diagnosis-container .user-header-container .row_ {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.diagnosis-container .user-header-container .row_ .col-table-1 {
+  width: 7%;
+  color: #29c6d5;
+}
+
+.diagnosis-container .user-header-container .row_ .col-table-1 span {
+  margin-left: 0.5rem;
+}
+
+.diagnosis-container .user-header-container .row_ .col-table-2 {
+  width: 10%;
+}
+
+.diagnosis-container .user-header-container .row_ .col-table-4 {
+  width: 50%;
+}
+
+.diagnosis-container .user-header-container .row_ .col-table-7 {
+  width: 12%;
+}
+
+.diagnosis-container .user-subtitle-container {
+  margin: 0.1rem auto 0rem auto;
+  -webkit-box-shadow: 0rem 0rem 0.2rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0rem 0rem 0.2rem rgba(0, 0, 0, 0.2);
+  padding: 1rem 2rem;
+  background: #fff;
+  cursor: pointer;
+}
+
+.diagnosis-container .user-subtitle-container:hover {
+  background: #f9f9f9;
+  -webkit-box-shadow: 0 2px 1.5px rgba(0, 0, 0, 0.034), 0 5px 4px rgba(0, 0, 0, 0.048), 0 8.5px 3px rgba(0, 0, 0, 0.06), 0 2.3px 7.9px rgba(0, 0, 0, 0.072);
+          box-shadow: 0 2px 1.5px rgba(0, 0, 0, 0.034), 0 5px 4px rgba(0, 0, 0, 0.048), 0 8.5px 3px rgba(0, 0, 0, 0.06), 0 2.3px 7.9px rgba(0, 0, 0, 0.072);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.diagnosis-container .user-subtitle-container .row_ {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.diagnosis-container .user-subtitle-container .row_ .col-table-1 {
+  width: 7%;
+  color: #29c6d5;
+}
+
+.diagnosis-container .user-subtitle-container .row_ .col-table-1 span {
+  margin-left: 0.5rem;
+}
+
+.diagnosis-container .user-subtitle-container .row_ .col-table-2 {
+  width: 10%;
+}
+
+.diagnosis-container .user-subtitle-container .row_ .col-table-4 {
+  width: 50%;
+}
+
+.diagnosis-container .user-subtitle-container .row_ .col-table-7 {
+  width: 12%;
+}
+
+/**********************/
+/* Prescription Table */
+/**********************/
+.prescription-container {
+  width: 100%;
+  margin: 0rem auto;
+  font-size: 0.79em;
+}
+
+.prescription-container .user-header-container {
+  margin: 2rem auto 0rem auto;
+  -webkit-box-shadow: 0rem 0rem 0.2rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0rem 0rem 0.2rem rgba(0, 0, 0, 0.2);
+  padding: 1.5rem 2rem;
+  background: #fff;
+}
+
+.prescription-container .user-header-container .header {
+  color: #9999;
+}
+
+.prescription-container .user-header-container .col-table .text-lead {
+  padding-bottom: 1.5rem;
+  font-weight: bold;
+  font-size: 1.3em;
+}
+
+.prescription-container .user-header-container .row_ {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.prescription-container .user-header-container .row_ .col-table-1 {
+  display: none;
+}
+
+.prescription-container .user-header-container .row_ .col-table-2 {
+  width: 16%;
+}
+
+.prescription-container .user-header-container .row_ .col-table-3 {
+  width: 20%;
+}
+
+.prescription-container .user-header-container .row_ .col-table-4 {
+  width: 15%;
+}
+
+.prescription-container .user-header-container .row_ .col-table-5 {
+  width: 40%;
+}
+
+.prescription-container .user-header-container .row_ .col-table-6 {
+  width: 30%;
+}
+
+.prescription-container .user-subtitle-container {
+  margin: 0.1rem auto 0rem auto;
+  -webkit-box-shadow: 0rem 0rem 0.2rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0rem 0rem 0.2rem rgba(0, 0, 0, 0.2);
+  padding: 1rem 2rem;
+  background: #fff;
+  cursor: pointer;
+}
+
+.prescription-container .user-subtitle-container:hover {
+  background: #f9f9f9;
+  -webkit-box-shadow: 0 2px 1.5px rgba(0, 0, 0, 0.034), 0 5px 4px rgba(0, 0, 0, 0.048), 0 8.5px 3px rgba(0, 0, 0, 0.06), 0 2.3px 7.9px rgba(0, 0, 0, 0.072);
+          box-shadow: 0 2px 1.5px rgba(0, 0, 0, 0.034), 0 5px 4px rgba(0, 0, 0, 0.048), 0 8.5px 3px rgba(0, 0, 0, 0.06), 0 2.3px 7.9px rgba(0, 0, 0, 0.072);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.prescription-container .user-subtitle-container .row_ {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.prescription-container .user-subtitle-container .row_ .col-table-1 {
+  display: none;
+}
+
+.prescription-container .user-subtitle-container .row_ .col-table-2 {
+  width: 16%;
+}
+
+.prescription-container .user-subtitle-container .row_ .col-table-3 {
+  width: 20%;
+}
+
+.prescription-container .user-subtitle-container .row_ .col-table-4 {
+  width: 15%;
+}
+
+.prescription-container .user-subtitle-container .row_ .col-table-5 {
+  width: 40%;
+}
+
+.prescription-container .user-subtitle-container .row_ .col-table-6 {
+  width: 30%;
+}
+
+/**********************/
 /*     Sign Up Form   */
 /**********************/
 /*******************/
@@ -927,6 +1158,88 @@ Table Of Contents:
   }
   #user-profile .title_ {
     font-size: 1em;
+  }
+  /**********************/
+  /*  Diagnosis Table   */
+  /**********************/
+  .diagnosis-container {
+    width: 100%;
+    margin: 0rem auto;
+    font-size: 0.79em;
+  }
+  .diagnosis-container .user-header-container .row_ .col-table-1 {
+    width: 7%;
+  }
+  .diagnosis-container .user-header-container .row_ .col-table-1 span {
+    margin-left: 0.5rem;
+  }
+  .diagnosis-container .user-header-container .row_ .col-table-2 {
+    width: 20%;
+  }
+  .diagnosis-container .user-header-container .row_ .col-table-4 {
+    width: 50%;
+    display: block;
+  }
+  .diagnosis-container .user-header-container .row_ .col-table-7 {
+    width: 10%;
+  }
+  .diagnosis-container .user-subtitle-container .row_ .col-table-1 {
+    width: 7%;
+  }
+  .diagnosis-container .user-subtitle-container .row_ .col-table-1 span {
+    margin-left: 0.5rem;
+  }
+  .diagnosis-container .user-subtitle-container .row_ .col-table-2 {
+    width: 20%;
+  }
+  .diagnosis-container .user-subtitle-container .row_ .col-table-4 {
+    width: 50%;
+    display: block;
+  }
+  .diagnosis-container .user-subtitle-container .row_ .col-table-7 {
+    width: 10%;
+  }
+  /**********************/
+  /* Prescription Table */
+  /**********************/
+  .prescription-container {
+    width: 100%;
+    margin: 0rem auto;
+    font-size: 0.79em;
+  }
+  .prescription-container .user-header-container .row_ .col-table-2 {
+    width: 20%;
+  }
+  .prescription-container .user-header-container .row_ .col-table-3 {
+    display: none;
+  }
+  .prescription-container .user-header-container .row_ .col-table-4 {
+    width: 10%;
+    display: block;
+  }
+  .prescription-container .user-header-container .row_ .col-table-5 {
+    display: block;
+    width: 40%;
+  }
+  .prescription-container .user-header-container .row_ .col-table-6 {
+    display: none;
+  }
+  .prescription-container .user-subtitle-container .row_ .col-table-2 {
+    width: 20%;
+  }
+  .prescription-container .user-subtitle-container .row_ .col-table-3 {
+    display: none;
+  }
+  .prescription-container .user-subtitle-container .row_ .col-table-4 {
+    width: 10%;
+    display: block;
+  }
+  .prescription-container .user-subtitle-container .row_ .col-table-5 {
+    display: block;
+    width: 40%;
+  }
+  .prescription-container .user-subtitle-container .row_ .col-table-6 {
+    display: none;
   }
 }
 
@@ -1094,6 +1407,86 @@ Table Of Contents:
   }
   #user-profile .title_ {
     font-size: 1em;
+  }
+  /**********************/
+  /*  Diagnosis Table   */
+  /**********************/
+  .diagnosis-container {
+    width: 100%;
+    margin: 0rem auto;
+    font-size: 0.79em;
+  }
+  .diagnosis-container .user-header-container .row_ .col-table-1 {
+    width: 7%;
+  }
+  .diagnosis-container .user-header-container .row_ .col-table-1 span {
+    margin-left: 0.5rem;
+  }
+  .diagnosis-container .user-header-container .row_ .col-table-2 {
+    width: 50%;
+  }
+  .diagnosis-container .user-header-container .row_ .col-table-4 {
+    width: 50%;
+    display: none;
+  }
+  .diagnosis-container .user-header-container .row_ .col-table-7 {
+    width: 40%;
+  }
+  .diagnosis-container .user-subtitle-container .row_ .col-table-1 {
+    width: 7%;
+  }
+  .diagnosis-container .user-subtitle-container .row_ .col-table-1 span {
+    margin-left: 0.5rem;
+  }
+  .diagnosis-container .user-subtitle-container .row_ .col-table-2 {
+    width: 50%;
+  }
+  .diagnosis-container .user-subtitle-container .row_ .col-table-4 {
+    width: 50%;
+    display: none;
+  }
+  .diagnosis-container .user-subtitle-container .row_ .col-table-7 {
+    width: 40%;
+  }
+  /**********************/
+  /* Prescription Table */
+  /**********************/
+  .prescription-container {
+    width: 100%;
+    margin: 0rem auto;
+    font-size: 0.79em;
+  }
+  .prescription-container .user-header-container .row_ .col-table-2 {
+    width: 50%;
+  }
+  .prescription-container .user-header-container .row_ .col-table-3 {
+    display: none;
+  }
+  .prescription-container .user-header-container .row_ .col-table-4 {
+    width: 30%;
+    display: block;
+  }
+  .prescription-container .user-header-container .row_ .col-table-5 {
+    display: none;
+  }
+  .prescription-container .user-header-container .row_ .col-table-6 {
+    display: none;
+  }
+  .prescription-container .user-subtitle-container .row_ .col-table-2 {
+    width: 50%;
+  }
+  .prescription-container .user-subtitle-container .row_ .col-table-3 {
+    display: none;
+  }
+  .prescription-container .user-subtitle-container .row_ .col-table-4 {
+    width: 30%;
+    display: block;
+  }
+  .prescription-container .user-subtitle-container .row_ .col-table-5 {
+    display: none;
+  }
+  .prescription-container .user-subtitle-container .row_ .col-table-6 {
+    display: none;
   }
 }
 /*# sourceMappingURL=styles.css.map */

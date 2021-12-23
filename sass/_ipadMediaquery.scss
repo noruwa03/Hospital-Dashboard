@@ -52,4 +52,127 @@
       font-size: 1em;
     }
   }
+
+  /**********************/
+  /*  Diagnosis Table   */
+  /**********************/
+
+  .diagnosis-container {
+    width: 100%;
+    margin: 0rem auto;
+    font-size: 0.79em;
+
+    .user-header-container {
+      .row_ {
+        .col-table-1 {
+          width: 7%;
+
+          span {
+            margin-left: 0.5rem;
+          }
+        }
+
+        .col-table-2 {
+          width: 20%;
+        }
+
+        .col-table-4 {
+          width: 50%;
+          display: block;
+        }
+
+        .col-table-7 {
+          width: 10%;
+        }
+      }
+    }
+
+    .user-subtitle-container {
+      .row_ {
+        .col-table-1 {
+          width: 7%;
+
+          span {
+            margin-left: 0.5rem;
+          }
+        }
+
+        .col-table-2 {
+          width: 20%;
+        }
+
+        .col-table-4 {
+          width: 50%;
+          display: block;
+        }
+
+        .col-table-7 {
+          width: 10%;
+        }
+      }
+    }
+  }
+  /**********************/
+  /* Prescription Table */
+  /**********************/
+
+  .prescription-container {
+    width: 100%;
+    margin: 0rem auto;
+    font-size: 0.79em;
+
+    .user-header-container {
+      .row_ {
+        .col-table-2 {
+          width: 20%;
+        }
+
+        .col-table-3 {
+          display: none;
+        }
+
+        .col-table-4 {
+          width: 10%;
+
+          display: block;
+        }
+
+        .col-table-5 {
+          display: block;
+          width: 40%;
+        }
+
+        .col-table-6 {
+          display: none;
+        }
+      }
+    }
+
+    .user-subtitle-container {
+      .row_ {
+        .col-table-2 {
+          width: 20%;
+        }
+
+        .col-table-3 {
+          display: none;
+        }
+
+        .col-table-4 {
+          width: 10%;
+
+          display: block;
+        }
+
+        .col-table-5 {
+          display: block;
+          width: 40%;
+        }
+
+        .col-table-6 {
+          display: none;
+        }
+      }
+    }
+  }
 }

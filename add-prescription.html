@@ -1,0 +1,110 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Prescription</title>
+    <link
+      rel="stylesheet"
+      href="/bootstrap-5.0.0-beta3-dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="/icons-1.7.0/font/bootstrap-icons.css" />
+    <!-- JavaScript Bundle with Popper -->
+    <script src="/bootstrap-5.0.0-beta3-dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="/sass/styles.css" />
+  </head>
+  <body>
+    <form action="">
+      <div id="add-patient">
+        <!-- start of container-lg -->
+        <div class="container-lg py-3">
+          <div class="row align-items-center justify-content-sm-between pt-2">
+            <div class="col-sm-6">
+              <div class="h2">Add Prescription</div>
+              <p class="fw-normal">
+                Please input prescription information carefully.
+              </p>
+            </div>
+          </div>
+
+          <div class="card py-4 px-4 my-3">
+            <div class="row align-items-center justify-content-sm-between">
+              <div class="col-sm-6">
+                <div class="h4">Patient Info</div>
+                <p class="fw-normal">
+                  Add common infomation like Report Type, Date etc.
+                </p>
+              </div>
+            </div>
+
+            <div class="row align-items-center justify-content-sm-between">
+              <div class="col-lg-4 col-sm-12 mt-4">
+                <label for="medicine">Medicine</label>
+                <input
+                  type="text"
+                  class="form-control mt-2"
+                  id="medicine"
+                  placeholder="Medicine"
+                />
+              </div>
+
+              <div class="col-lg-4 col-sm-12 mt-4">
+                <label for="category">Medicine Category</label>
+                <select name="" class="form-select" id="category">
+                  <option value="Tablet">Tablet</option>
+                  <option value="Capsule">Capsule</option>
+                  <option value="Other">Other</option>
+                </select>
+              </div>
+
+              <div class="col-lg-4 col-sm-12 mt-4">
+                <label for="doctor">Consultant</label>
+                <select name="" class="form-select" id="doctor">
+                  <option value="Okoli Anams Johnson">
+                    Okoli Anams Johnson
+                  </option>
+                  <option value="Chinedu Augustus">Chinedu Augustus</option>
+                  <option value="Adebanjo Oluwatosin Seun">
+                    Adebanjo Oluwatosin Seun
+                  </option>
+                </select>
+              </div>
+
+              <div class="col-lg-4 col-sm-12 mt-4">
+                <label for="dosage">Dosage</label>
+                <input
+                  type="text"
+                  class="form-control mt-2"
+                  id="dosage"
+                  placeholder="Dosage"
+                />
+              </div>
+            </div>
+
+            <div class="col-lg-6 col-sm-12 mt-4">
+              <div class="form-floating">
+                <textarea
+                  name=""
+                  id="address"
+                  class="form-control"
+                  style="height: 5rem; resize: none"
+                ></textarea>
+                <label for="address">Instruction</label>
+              </div>
+            </div>
+
+            <!-- end of row -->
+
+            <div class="row">
+              <div class="col-sm-4">
+                <button class="btn btn-o-p btn-outline-primary mt-4">
+                  Add Precription
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>

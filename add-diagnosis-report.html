@@ -1,0 +1,89 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Diagnosis Report</title>
+    <link
+      rel="stylesheet"
+      href="/bootstrap-5.0.0-beta3-dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="/icons-1.7.0/font/bootstrap-icons.css" />
+    <!-- JavaScript Bundle with Popper -->
+    <script src="/bootstrap-5.0.0-beta3-dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="/sass/styles.css" />
+  </head>
+  <body>
+    <form action="">
+      <div id="add-patient">
+        <!-- start of container-lg -->
+        <div class="container-lg py-3">
+          <div class="row align-items-center justify-content-sm-between pt-2">
+            <div class="col-sm-6">
+              <div class="h2">Add Report</div>
+              <p class="fw-normal">
+                Please input report information carefully.
+              </p>
+            </div>
+          </div>
+
+          <div class="card py-4 px-4 my-3">
+            <div class="row align-items-center justify-content-sm-between">
+              <div class="col-sm-6">
+                <div class="h4">Patient Info</div>
+                <p class="fw-normal">
+                  Add common infomation like Report Type, Date etc.
+                </p>
+              </div>
+            </div>
+
+            <div class="row align-items-center justify-content-sm-between">
+              <div class="col-lg-4 col-sm-12 mt-4">
+                <label for="report">Report Type</label>
+                <input
+                  type="text"
+                  class="form-control mt-2"
+                  id="report"
+                  placeholder="Report Type"
+                />
+              </div>
+
+              <div class="col-lg-4 col-sm-12 mt-4">
+                <label for="date">Date</label>
+                <input
+                  type="date"
+                  class="form-control mt-2"
+                  id="date"
+               
+                />
+              </div>
+              <div class="col-lg-4 col-sm-12 mt-4">
+                <label for="description">Description</label>
+                <input
+                  type="text"
+                  class="form-control mt-2"
+                  id="description"
+                  placeholder="Description"
+                />
+              </div>
+
+             
+
+         
+            </div>
+
+            <!-- end of row -->
+
+            <div class="row">
+              <div class="col-sm-4">
+                <button class="btn btn-o-p btn-outline-primary mt-4">
+                  Add Report
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>
