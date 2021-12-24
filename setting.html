@@ -43,15 +43,27 @@
           </button>
           <button
             class="nav-link"
-            id="nav-contact-tab"
+            id="nav-department-tab"
             data-bs-toggle="tab"
-            data-bs-target="#nav-contact"
+            data-bs-target="#nav-department"
             type="button"
             role="tab"
-            aria-controls="nav-contact"
+            aria-controls="nav-department"
             aria-selected="false"
           >
-            Contact
+            Department
+          </button>
+          <button
+            class="nav-link"
+            id="nav-bed-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#nav-bed"
+            type="button"
+            role="tab"
+            aria-controls="nav-bed"
+            aria-selected="false"
+          >
+            Bed Group
           </button>
         </div>
       </nav>
@@ -314,14 +326,218 @@
         </div>
         <div
           class="tab-pane fade"
-          id="nav-contact"
+          id="nav-department"
           role="tabpanel"
-          aria-labelledby="nav-contact-tab"
+          aria-labelledby="nav-department-tab"
         >
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea ullam
-          assumenda illum necessitatibus et sequi aperiam provident itaque, quia
-          dignissimos! Modi iure tempore aperiam mollitia voluptatum placeat cum
-          eaque quaerat?
+          <!-- start of container-lg -->
+          <div class="container-lg py-3">
+            <div class="row align-items-center justify-content-sm-between pt-4">
+              <div class="col-sm-8">
+                <div class="h2">Department Lists</div>
+                <p class="fw-normal">You have total 12 departments.</p>
+              </div>
+              <div class="col-sm-3 text-sm-end">
+                <a
+                  href="department-form.html"
+                  class="btn btn-o-p btn-outline-primary me-3"
+                >
+                  <i class="bi bi-box pe-1" style="font-size: 1.3em"></i>
+                  Add Department
+                </a>
+              </div>
+            </div>
+
+            <!-- Department List -->
+            <div class="diagnosis-container pb-4 pt-1">
+              <div class="user-header-container">
+                <div class="col-table">
+                  <div class="text-lead">Department</div>
+                </div>
+                <div class="row_">
+                  <div class="col-table-1 header">
+                    <input type="checkbox" />
+                    <span>Id</span>
+                  </div>
+                  <div class="col-table-2 header">Department</div>
+
+                  <div class="col-table-4 header">Description</div>
+
+                  <div class="col-table-7 header">Status</div>
+                </div>
+              </div>
+
+              <div class="user-subtitle-container">
+                <div class="row_">
+                  <div class="col-table-1">
+                    <input type="checkbox" />
+                    <span>9765</span>
+                  </div>
+                  <div class="col-table-2">
+                    <div class="img-name">
+                      <div class="username">Anesthesiology</div>
+                    </div>
+                  </div>
+
+                  <div class="col-table-4 fc">
+                    Anesthesiology is the medical specialty concerned with the
+                    total perioperative care of patients before, during and
+                    after surgery.
+                  </div>
+
+                  <div class="col-table-7 fc">Active</div>
+                </div>
+              </div>
+
+              <div class="user-subtitle-container">
+                <div class="row_">
+                  <div class="col-table-1">
+                    <input type="checkbox" />
+                    <span>9765</span>
+                  </div>
+                  <div class="col-table-2">
+                    <div class="img-name">
+                      <div class="username">Cardiology</div>
+                    </div>
+                  </div>
+
+                  <div class="col-table-4 fc">
+                    Cardiology is a branch of medicine that deals with the
+                    disorders of the heart as well as some parts of the
+                    circulatory system.
+                  </div>
+
+                  <div class="col-table-7 fc">Inactive</div>
+                </div>
+              </div>
+
+              <div class="user-subtitle-container">
+                <div class="row_">
+                  <div class="col-table-1">
+                    <input type="checkbox" />
+                    <span>9765</span>
+                  </div>
+                  <div class="col-table-2">
+                    <div class="img-name">
+                      <div class="username">Dermatology</div>
+                    </div>
+                  </div>
+
+                  <div class="col-table-4 fc">
+                    Dermatology is the branch of medicine dealing with the skin.
+                    It is a speciality with both medical and surgical aspects.
+                  </div>
+
+                  <div class="col-table-7 fc">Active</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="tab-pane fade"
+          id="nav-bed"
+          role="tabpanel"
+          aria-labelledby="nav-bed-tab"
+        >
+          <!-- start of container-lg -->
+          <div class="container-lg py-3">
+            <div class="row align-items-center justify-content-sm-between pt-4">
+              <div class="col-sm-8">
+                <div class="h2">Bed Group Lists</div>
+                <p class="fw-normal">You have total 7 types bed group.</p>
+              </div>
+              <div class="col-sm-3 text-sm-end">
+                <a
+                  href="bed-group-form.html"
+                  class="btn btn-o-p btn-outline-primary me-3"
+                >
+                  <i class="bi bi-box pe-1" style="font-size: 1.3em"></i>
+                  Add Bed Group
+                </a>
+              </div>
+            </div>
+
+            <!-- Department List -->
+            <div class="diagnosis-container pb-4 pt-1">
+              <div class="user-header-container">
+                <div class="col-table">
+                  <div class="text-lead">Bed Group</div>
+                </div>
+                <div class="row_">
+                  <div class="col-table-1 header">
+                    <span>Capacity</span>
+                  </div>
+                  <div class="col-table-2 header">Group</div>
+
+                  <div class="col-table-4 header">Description</div>
+
+                  <div class="col-table-7 header">Status</div>
+                </div>
+              </div>
+
+              <div class="user-subtitle-container">
+                <div class="row_">
+                  <div class="col-table-1">
+                    <span>30</span>
+                  </div>
+                  <div class="col-table-2">
+                    <div class="img-name">
+                      <div class="username">Male Ward</div>
+                    </div>
+                  </div>
+
+                  <div class="col-table-4 fc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Aliquid laboriosam ducimus consequatur.
+                  </div>
+
+                  <div class="col-table-7 fc">Active</div>
+                </div>
+              </div>
+
+              <div class="user-subtitle-container">
+                <div class="row_">
+                  <div class="col-table-1">
+                    <span>30</span>
+                  </div>
+                  <div class="col-table-2">
+                    <div class="img-name">
+                      <div class="username">Female Ward</div>
+                    </div>
+                  </div>
+
+                  <div class="col-table-4 fc">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Fugiat nulla laborum incidunt.
+                  </div>
+
+                  <div class="col-table-7 fc">Inactive</div>
+                </div>
+              </div>
+
+              <div class="user-subtitle-container">
+                <div class="row_">
+                  <div class="col-table-1">
+
+                    <span>15</span>
+                  </div>
+                  <div class="col-table-2">
+                    <div class="img-name">
+                      <div class="username">Special Unit</div>
+                    </div>
+                  </div>
+
+                  <div class="col-table-4 fc">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam inventore quibusdam sequi.
+                  </div>
+
+                  <div class="col-table-7 fc">Active</div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
