@@ -542,16 +542,13 @@
       </div>
     </div>
 
-    <script>
-      var triggerTabList = [].slice.call(document.querySelectorAll("#myTab a"));
-      triggerTabList.forEach(function (triggerEl) {
-        var tabTrigger = new bootstrap.Tab(triggerEl);
+    <!-- Back To Top Button -->
+    <button onclick="topFunction()" id="myBtn">
+      <img src="/assets/images/up-arrow.png" alt="alternative" />
+    </button>
+    <!-- end of back to top button -->
 
-        triggerEl.addEventListener("click", function (event) {
-          event.preventDefault();
-          tabTrigger.show();
-        });
-      });
-    </script>
+    <!-- Script -->
+    <script src="/javascript/app.js"></script>
   </body>
 </html>

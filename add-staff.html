@@ -10,11 +10,7 @@
     />
     <link rel="stylesheet" href="/icons-1.7.0/font/bootstrap-icons.css" />
     <link rel="stylesheet" href="/sass/styles.css" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/froala-editor@latest/css/froala_editor.pkgd.min.css"
-      rel="stylesheet"
-      type="text/css"
-    />
+
     <script
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/froala-editor@latest/js/froala_editor.pkgd.min.js"
@@ -92,13 +88,11 @@
                 />
               </div>
 
-
               <div class="col-lg-4 col-sm-12 mt-4">
                 <label for="status">Status</label>
                 <select name="" class="form-select" id="status">
                   <option value="Active">Active</option>
                   <option value="Inactive">Inactive</option>
-                
                 </select>
               </div>
 
@@ -107,24 +101,20 @@
                 <select name="" class="form-select" id="status">
                   <option value="Active">Admin</option>
                   <option value="Inactive">Staff</option>
-                
                 </select>
               </div>
-
-    
-
             </div>
-             <div class="col-lg-6 col-sm-12 mt-4">
-                <div class="form-floating">
-                  <textarea
-                    name=""
-                    id="address"
-                    class="form-control"
-                    style="height: 5rem; resize: none"
-                  ></textarea>
-                  <label for="address">Address</label>
-                </div>
+            <div class="col-lg-6 col-sm-12 mt-4">
+              <div class="form-floating">
+                <textarea
+                  name=""
+                  id="address"
+                  class="form-control"
+                  style="height: 5rem; resize: none"
+                ></textarea>
+                <label for="address">Address</label>
               </div>
+            </div>
             <!-- end of row -->
 
             <div class="row">
@@ -139,8 +129,13 @@
       </div>
     </form>
 
-    <script>
-     
-    </script>
+    <!-- Back To Top Button -->
+    <button onclick="topFunction()" id="myBtn">
+      <img src="/assets/images/up-arrow.png" alt="alternative" />
+    </button>
+    <!-- end of back to top button -->
+
+    <!-- Script -->
+    <script src="/javascript/app.js"></script>
   </body>
 </html>

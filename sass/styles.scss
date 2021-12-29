@@ -15,6 +15,7 @@ Table Of Contents:
 - Diagnosis Table
 - Prescription Table
 - Sign Up Form
+- Back Butto Top
 - Media Queries
 ******************************************/
 
@@ -963,6 +964,33 @@ Table Of Contents:
 /*     Sign Up Form   */
 /**********************/
 @import "signup-form";
+
+/******************************/
+/*     Back To Top Button     */
+/******************************/
+#myBtn {
+  position: fixed;
+  z-index: 99;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  width: 52px;
+  height: 52px;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+  background-color: #1b1b1b;
+  cursor: pointer;
+}
+
+#myBtn:hover {
+  background-color: #1d1d21;
+}
+
+#myBtn img {
+  margin-bottom: 0.25rem;
+  width: 18px;
+}
 
 /**********************/
 /*     Mediaqueries   */
