@@ -228,8 +228,8 @@ Table Of Contents:
   cursor: pointer;
 
   img {
-    width: 30px;
-    height: 30px;
+    width: 2.4rem;
+    height: 2.4rem;
     border-radius: 50%;
     margin-right: 0.6rem;
   }
@@ -242,6 +242,10 @@ Table Of Contents:
   .name {
     display: block;
   }
+}
+
+.dropdown-menu {
+  cursor: pointer;
 }
 
 .navbar {
